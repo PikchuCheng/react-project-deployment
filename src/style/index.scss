@@ -1,4 +1,5 @@
 
+
 *{
 
     margin: 0;
@@ -6,10 +7,82 @@
 
 .navbar{
 
-    background-color: red;
+
+    height: 60px;
+    background-color:white;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sidebar-icon{
+        height:32px;
+        width:35px;
+        
+        position: relative;
+
+        .bar{
+            height:8px;
+            width:100%;
+            background-color: black;
+            position: absolute;
+            transition: transform 0.5s ease-in-out;
+
+            &:nth-child(1){
+                top:0;
+                transform: translateY(-0%);
+            
+            }
+
+            &:nth-child(2){
+                top:50%;
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(3){
+                top:100%;
+                transform:  translateY(-100%);
+            }
+
+        }
+
+        &.active{
+
+            .bar{
+
+                transform-origin:center ;
+                top: 50%;
+
+                &:nth-child(1){
+                    top:0;
+                    transform: scale(1) rotate(45deg) translateY(-50%);
+                
+                }
+    
+                &:nth-child(2){
+                    top:50%;
+                    transform: scale(0) rotate(45deg) translateY(-50%);
+                }
+    
+                &:nth-child(3){
+                    top:100%;
+                    transform: scale(1) rotate(135deg) translateX(-80%) translateY(300%);
+                }
+                
+            }
+        }
+    }
 
 }
+
+
+.nav-links{
+ a{
+    margin-left: 1em;
+    padding-left: 1em;
+ }
+}
+
 
 // Recipes sass style
 
