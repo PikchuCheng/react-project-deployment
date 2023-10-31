@@ -1,5 +1,16 @@
 
+*{
+
+    margin: 0;
+}
+
+.navbar{
+
+    background-color: red;
+
+}
 
 // Recipes sass style
 
 @import "partials/recipes.scss"
+
