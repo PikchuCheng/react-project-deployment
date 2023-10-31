@@ -1,0 +1,42 @@
+.previous-search{
+ .previous-searching-container{
+  .search-item{
+    background-color: #8d2b2b;
+    display: inline-block;
+    padding: .5em;
+    margin: .5em .5em 0 .5em;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px -4px lightblue;
+    animation: slideRight 0.5s forwards;
+  }
+ }
+}
+
+@keyframes slideRight {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+.recipe-summary {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #8d2b2b;
+   
+}
+
+.recipe-summary b {
+  font-weight: bold;
+}
+
+.recipe-summary a {
+  text-decoration: none;
+  color: #0074d9;
+}
