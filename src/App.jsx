@@ -8,11 +8,11 @@ function App() {
   return (
     <>
 
-    <Navbar />
+   
 
    
     <h3>this is a final project</h3>
-     
+    <Navbar />
     
     <h4>By Gabriella Esther Pikchu 2023</h4>
 
