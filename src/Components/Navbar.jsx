@@ -1,14 +1,25 @@
 import React from 'react'
 import {useState} from "react"
+import Sidebar from './Sidebar'
 
 
 
 export default function Navbar() {
 
     const [showSidebar, setShowSidebar] = useState(false)
+ 
+
+
+
+function closeSidebar(){
+  setShowSidebar(false)
+}
 
 
   return (
+
+    <>
+
     <div className= "navbar">
 
         <a href="#!">FoodiesParadise</a>
@@ -21,7 +32,7 @@ export default function Navbar() {
         
         </div>
         
-      <div onClick={()=> setShowSidebar(!showSidebar)} className={showSidebar ? "sidebar-icon active" : "sidebar-icon"} >
+      <div onClick={()=> setShowSidebar(true)} className = {showSidebar ? "sidebar-icon active" : "sidebar-icon"} >
 
         <div className="bar"></div>
         <div className="bar"></div>
@@ -34,5 +45,11 @@ export default function Navbar() {
 
         
         </div>
+
+
+         {showSidebar && <Sidebar close={closeSidebar}/>}
+
+
+        </>
   )
 }
