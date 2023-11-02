@@ -1,3 +1,19 @@
+:root {
+    font-family: Helvetica, Inter, system-ui, Avenir,  Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 30px;
+  
+    color-scheme: light dark;
+    color: rgba(32, 30, 30, 0.87);
+    /* background-color: #242424; */
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
 
 *{
 
@@ -12,5 +28,7 @@
 
 // Recipes sass style
 
-@import "partials/recipes.scss"
+@import "partials/recipes.scss";
+
+@import "partials/hero.scss";
 
