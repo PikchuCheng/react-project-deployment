@@ -3,23 +3,23 @@ import { useState, useEffect } from "react";
 function Recipes() {
   const [recipes, setRecipes] = useState([]);
 
-    // useEffect(() => {
-    //   const fetchRecipes = async () => {
-    //     try {
-    //       const response = await fetch(
-    //         "https://api.spoonacular.com/recipes/complexSearch?apiKey=7de9f264fd544e33ba45dfac9bcb6ef6&number=90&diet=vegetarian&addRecipeInformation=true"
-    //       );
-    //       const data = await response.json();
-    //       setRecipes(data.results);
-    //       console.log(data);
-    //       console.log("data-results:", data.results);
-    //     } catch (error) {
-    //       console.log("Error fetching recipes:", error);
-    //     }
-    //   };
+    useEffect(() => {
+      const fetchRecipes = async () => {
+        try {
+          const response = await fetch(
+            "https://api.spoonacular.com/recipes/complexSearch?apiKey=?&number=90&diet=vegetarian&addRecipeInformation=true"
+          );
+          const data = await response.json();
+          setRecipes(data.results);
+          console.log(data);
+          console.log("data-results:", data.results);
+        } catch (error) {
+          console.log("Error fetching recipes:", error);
+        }
+      };
 
-    //   fetchRecipes();
-    // }, []);
+      fetchRecipes();
+    }, []);
 
   const searches = [
     "gluten free",
