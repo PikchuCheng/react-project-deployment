@@ -15,135 +15,11 @@
     -webkit-text-size-adjust: 100%;
   }
 
+  body{
+    padding-top: 120px;
+  }
 
-//Pikchu
-*{
-    margin: 0;
-  
-}
-
-.navbar{
- 
-    height: 80px;
-    background-color:rgb(235, 78, 164);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .sidebar-icon{
-        height:32px;
-        width:35px;
-        display: none;
-        position: relative;
-
-        .bar{
-            height:8px;
-            width:100%;
-            background-color: white;
-            position: absolute;
-            transition: transform 0.5s ease-in-out;
-
-            &:nth-child(1){
-                top:0;
-                transform: translateY(-0%);
-            
-            }
-
-            &:nth-child(2){
-                top:50%;
-                transform: translateY(-50%);
-            }
-
-            &:nth-child(3){
-                top:100%;
-                transform:  translateY(-100%);
-            }
-
-        }
-
-        &.active{
-
-            .bar{
-
-                transform-origin:center ;
-                top: 50%;
-
-                &:nth-child(1){
-                
-                    transform: translate(0,-50%) scale(1) rotate(45deg);
-                
-                }
-    
-                &:nth-child(2){ 
-                    
-                    transform: scaleX(0) translateY(-50%);
-                }
-    
-                &:nth-child(3){
-                   
-                    transform: translate(0,-50%) scale(1) rotate(-45deg) ;
-                }   
-            }
-        }
-    }
-}
-
-.sidebar {
-    position: fixed;
-    top:0;
-    left: 0;
-    height: 100vh;
-    width: 400px;
-    background-color: white;
-    box-shadow: 0 0 0 1000px rgba(0,0,0,0.2);
-
-    .sidebar-links{
-
-        a{
-        
-        display: block;
-        color: white;
-        padding: 1em;
-        font-size: 1.5rem;
-        font-weight: bold;
-
-        &:hover{
-            background-color:rgba(0,0,0,0.2);
-        }
-      }
-    }
-
-
-}
-
-.nav-links{
-
-    background-color:rgb(235, 78, 164);
-   
-
- a{
-    margin-left: 1em;
-    padding-left: 1em;
-    letter-spacing: 1px;
-    color: white;
-    text-transform: uppercase;
-
- }
-}
-
-
-@media screen and (max-width: 768px){
-    .navbar{
-        .nav-links{
-            display: none;
-        }
-
-        .sidebar-icon{
-            display: block;
-        }
-    }
-}
+@import "partials/navbar.scss";
 
 // Recipes sass style
 
@@ -151,3 +27,4 @@
 
 @import "partials/hero.scss";
 
+@import "partials/footer.scss";

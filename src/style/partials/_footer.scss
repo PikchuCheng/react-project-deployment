@@ -1,0 +1,45 @@
+.footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr ;
+    padding: 4em;
+    column-gap: 30px;
+
+
+    .footer-section{
+
+        p{
+            opacity: .8;
+        }
+
+        p.title{
+            opacity: 1;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .footer{
+
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 50px;
+    }
+
+    .footer-section{
+
+        p{
+            opacity: .8;
+        }
+
+        p.title{
+            opacity: 1;
+            font-weight: bold;
+        }
+    }
+
+
+}

@@ -5,7 +5,7 @@ export default function Sidebar({close}) {
 
 
 
-    <div className='sidebar' onClick={close}>sidebar
+    <div className='sidebar' onClick={close}>
 
        <div className='sidebar-links'>
 
