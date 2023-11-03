@@ -1,4 +1,7 @@
+import {Link} from 'react-router-dom'
+
 import React from 'react'
+
 
 export default function Sidebar({close}) {
   return (
@@ -9,9 +12,10 @@ export default function Sidebar({close}) {
 
        <div className='sidebar-links'>
 
-          <a href="#!">Home</a>
-          <a href="#!">Recipes</a>
-          <a href="#!">Settings</a>
+        <Link to="/">Home</Link>
+        <Link to="/Recipes">Recipes</Link>
+        <Link to="/Setting">Settings</Link>
+
 
       </div>
     
