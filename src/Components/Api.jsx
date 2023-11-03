@@ -1,29 +1,30 @@
-const API_KEY = 'db5a9301f0c54c8487176de34e49ffb0';
-const API_BASE_URL = 'https://api.spoonacular.com/food/api';
+import { useContext, useEffect } from "react";
+import { useRecipeContext } from "./RecipeContext";
 
-const getRecipesFromApi = async (params = {}) => {
-  try {
-    const url = new URL(`${API_BASE_URL}/recipes`);
-    url.searchParams.append('apiKey', API_KEY);
+function Api() {
+  const { setRecipes } = useContext(useRecipeContext);
 
-    for (const [key, value] of Object.entries(params)) {
-        url.searchParams.append(key, value);
-    }
+  useEffect(() => {
+    const fetchRecipes = async () => {
+      try {
+        const response = await fetch(
+          "https://api.spoonacular.com/recipes/complexSearch?apiKey=7de9f264fd544e33ba45dfac9bcb6ef6&number=90&diet=vegetarian&addRecipeInformation=true"
+        );
+        const data = await response.json();
+        setRecipes(data.results.sort(()=>Math.random()-.5));
+        console.log(data);
+      } catch (error) {
+        console.log("Error fetching recipes:", error);
+      }
+    };
 
-    const response = await fetch(url);
-    if (!response.ok) {
-       console.log(response);
-    }
+    fetchRecipes();
+  }, [setRecipes]);
 
-      const data = await response.json();
-      console.log(data);
-    return data;
-  } catch (error) {
-    console.error('API Error:', error);
-    throw error;
-  }
-};
+  return null;
+}
 
-export { getRecipesFromApi };
+export default Api;
+ 
 
 
