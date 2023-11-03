@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />
-          <Route path="/settings" element={<Setting />} />
+          <Route path="/setting" element={<Setting />} /> 
         </Routes>
       </div>
       <h4>By Gabriella Esther Pikchu 2023</h4>

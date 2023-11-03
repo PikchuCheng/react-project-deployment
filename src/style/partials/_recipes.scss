@@ -1,6 +1,6 @@
-
-
 .recipes{
+  width: 99vw;
+  height: 100vh;
   padding-top: 3em ;
   background: linear-gradient(to top right, #13547a, #80d0c7);
 
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
 
   .search-item{
-    background-color:#08080891;
+    background-color:cadetblue;
     color:#fff;
     padding: .3em;
     border-radius: 25px;
