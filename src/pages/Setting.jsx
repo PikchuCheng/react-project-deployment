@@ -72,6 +72,20 @@ export default function Setting() {
               </div>
             )}
           </div>
+          <div className="options soft">
+            {theme === "soft" && (
+              <div className="check">
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+            )}
+          </div>
+          <div className="options pinky">
+            {theme === "pinky" && (
+              <div className="check">
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
