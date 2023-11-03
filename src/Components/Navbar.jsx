@@ -31,7 +31,7 @@ function closeSidebar(){
 
         <Link to="/">Home</Link>
         <Link to="/Recipes">Recipes</Link>
-        <Link to="/Setting">Settings</Link>
+        <Link to="/Settings">Settings</Link>
 
         
         
