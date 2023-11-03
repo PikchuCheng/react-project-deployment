@@ -13,7 +13,7 @@ function Recipes() {
     const fetchRecipes = async () => {
       try {
         const response = await fetch(
-          "https://api.spoonacular.com/recipes/complexSearch?apiKey=db5a9301f0c54c8487176de34e49ffb0&number=90&diet=vegetarian&addRecipeInformation=true"
+          "https://api.spoonacular.com/recipes/complexSearch?apiKey=&number=90&diet=vegetarian&addRecipeInformation=true"
         );
         const data = await response.json();
         setRecipes(data.results.sort(()=>Math.random()-.5));
@@ -25,7 +25,6 @@ function Recipes() {
 
     fetchRecipes();
   }, [setRecipes]);
-
 
   const handleSearch = (searchText) => {
     const filtered = recipes.filter((recipe) => {
