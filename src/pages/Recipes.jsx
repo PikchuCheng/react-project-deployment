@@ -1,6 +1,7 @@
 import { useState,  useEffect } from "react";
 import PreviousSearchDiet from "../Components/PreviousSearchDiet";
 import RecipeCard from "../Components/RecipeCard";
+import BackgroundColorChanger from "../Components/BackgroungColor";
 
 
 // db5a9301f0c54c8487176de34e49ffb0 hack till 17/10
@@ -15,7 +16,7 @@ function Recipes() {
     const fetchRecipes = async () => {
       try {
         const response = await fetch(
-          "https://api.spoonacular.com/recipes/complexSearch?apiKey=db5a9301f0c54c8487176de34e49ffb0&number=90&diet=vegetarian&addRecipeInformation=true"
+          "https://api.spoonacular.com/recipes/complexSearch?apiKey=&number=90&diet=vegetarian&addRecipeInformation=true"
         );
         const data = await response.json();
         setRecipes(data.results.sort(()=>Math.random()-.5));
@@ -38,7 +39,9 @@ function Recipes() {
   };
 
   return (
+    
     <div className="recipes">
+      <BackgroundColorChanger/>
       <PreviousSearchDiet onSearch={handleSearch} />
 
       <div className="cards-container">
@@ -55,6 +58,7 @@ function Recipes() {
 
       <h1>From Recipes</h1>
     </div>
+    
   );
 }
 
