@@ -1,9 +1,12 @@
 import { useState,  useEffect } from "react";
 import PreviousSearchDiet from "../Components/PreviousSearchDiet";
+import RecipeCard from "../Components/RecipeCard";
+import BackgroundColorChanger from "../Components/BackgroungColor";
 
 
-// db5a9301f0c54c8487176de34e49ffb0
+// db5a9301f0c54c8487176de34e49ffb0 hack till 17/10
 // 7de9f264fd544e33ba45dfac9bcb6ef6
+// e73903897fe440eaaa3a01257a18459a
 
 function Recipes() {
   const [recipes, setRecipes] = useState([])
@@ -36,55 +39,25 @@ function Recipes() {
   };
 
   return (
-   
-      <div className="recipes">
-        <PreviousSearchDiet onSearch={handleSearch} />
+    
+    <div className="recipes">
+      <BackgroundColorChanger/>
+      <PreviousSearchDiet onSearch={handleSearch} />
 
-        <div className="cards-container">
+      <div className="cards-container">
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map((recipe) => (
-           <div key={recipe.id} className="recipes-card">
-           <img src={recipe.image} alt={recipe.title} />
-           <h4 className="title">{recipe.title}</h4>
-           <ul className="recipe-diet">
-             {recipe.diets.map((diet, index) => (
-               <li key={index}>{diet}</li>
-             ))}
-           </ul>
-           <p
-             className="recipe-summary"
-             dangerouslySetInnerHTML={{ __html: recipe.summary }}
-           ></p>
-           <button onClick={() => window.open(recipe.sourceUrl)}>
-             View Recipe
-           </button>
-         </div>
+            <RecipeCard key={recipe.id} recipe={recipe} /> 
           ))
-        )
-           : (
-            recipes.map((recipe) => (
-              <div key={recipe.id} className="recipes-card">
-                <img src={recipe.image} alt={recipe.title} />
-                <h4 className="title">{recipe.title}</h4>
-                <ul className="recipe-diet">
-                  {recipe.diets.map((diet, index) => (
-                    <li key={index}>{diet}</li>
-                  ))}
-                </ul>
-                <p
-                  className="recipe-summary"
-                  dangerouslySetInnerHTML={{ __html: recipe.summary }}
-                ></p>
-                <button onClick={() => window.open(recipe.sourceUrl)}>
-                  View Recipe
-                </button>
-              </div>
-            ))
-          )}
-        </div>
-
-        <h1>From Recipes</h1>
+        ) : (
+          recipes.map((recipe) => (
+            <RecipeCard key={recipe.id} recipe={recipe} /> 
+          ))
+        )}
       </div>
+
+      <h1>From Recipes</h1>
+    </div>
     
   );
 }
