@@ -1,4 +1,10 @@
 :root {
+
+    --background-color: white;
+    --primary-color: rgb(130, 226, 218); 
+    --text-color: black; 
+
+
     font-family: Helvetica, Inter, system-ui, Avenir,  Arial, sans-serif;
     line-height: 1.6;
     font-weight: 500;
@@ -16,7 +22,8 @@
   }
 
   body{
-    padding-top: 120px;
+    padding-top: 300px;
+    font-family: 'Roboto'
   }
 
 @import "partials/navbar.scss";
