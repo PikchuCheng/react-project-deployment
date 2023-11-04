@@ -1,14 +1,17 @@
 //Pikchu
 *{
     margin: 0;
+    box-sizing: border-box;
   
 }
 
 .navbar{
  
     height: 80px;
-    background-color:rgb(235, 78, 164);
-    padding: 20px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    background-color:var(--primary-color);
+    padding-block: 10vh;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +21,21 @@
     width: 100%;
 
     z-index: 5;
+
+   
+
+    .logo{
+
+        font-family: playball;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        
+        span{
+            color:rgb(35, 206, 63);
+        }
+    }
 
     .sidebar-icon{
         height:32px;
@@ -77,6 +95,10 @@
     }
 }
 
+.container{
+    padding-inline: 10vw;
+}
+
 .sidebar {
     position: fixed;
     top:0;
@@ -84,7 +106,7 @@
     height: 100vh;
     width: 400px;
     background-color: white;
-    box-shadow: 0 0 0 1000px rgba(0,0,0,0.2);
+    box-shadow: 0 0 0 3000px rgba(0,0,0,0.2);
     z-index: 10;
     .sidebar-links{
 
@@ -93,11 +115,12 @@
         display: block;
         color: black;
         padding: 1em;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
 
         &:hover{
-            background-color:rgba(0,0,0,0.2);
+            background-color:var(--primary-color);
+            color: white;
         }
       }
     }
@@ -107,17 +130,22 @@
 
 .nav-links{
 
-    background-color:rgb(235, 78, 164);
+    background-color:var(--primary-color);
    
 
  a{
     margin-left: 1em;
     padding-left: 1em;
-    letter-spacing: 1px;
     color: white;
-    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover{
+       
+        color:rgb(35, 206, 63);
+    }
 
  }
+
 }
 
 

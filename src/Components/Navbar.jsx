@@ -23,15 +23,17 @@ function closeSidebar(){
 
     <>
 
-    <div className= "navbar">
+    <div className= "navbar container">
 
-        <a href="#!">FoodiesParadise</a>
-
+   
+        <a href="#!" className='logo'>Use<span>Repices</span></a>
+      
         <div className='nav-links'>
 
         <Link to="/">Home</Link>
         <Link to="/Recipes">Recipes</Link>
-        <Link to="/Setting">Settings</Link>
+        <Link to="/Setting">Setting</Link>
+        <Link to="/Contact">Contact</Link>
 
         
         

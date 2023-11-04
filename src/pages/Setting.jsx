@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+
 export default function Setting() {
   const [theme, setTheme] = useState("green");
   const [niceColor, setNiceColor] = useState(0);
@@ -50,6 +51,7 @@ export default function Setting() {
       value: 0.5,
     },
   ];
+
 
   return (
     <div className="setting">

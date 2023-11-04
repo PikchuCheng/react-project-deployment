@@ -5,20 +5,25 @@ import Home from "./pages/Home";
 import Recipes from "./pages/Recipes";
 import Setting from "./pages/Setting";
 import Footer from "./Components/Footer";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <BrowserRouter>
-      <h3>this is a final project</h3>
+    
       <Navbar />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />
+
+          <Route path="/contact" element={<Contact />} />
+
           <Route path="/setting" element={<Setting />} /> 
+
         </Routes>
       </div>
-      <h4>By Gabriella Esther Pikchu 2023</h4>
+     
       <Footer />
     </BrowserRouter>
   );
