@@ -1,5 +1,6 @@
 :root {
 
+
     --background-color: white;
     --primary-color: rgb(130, 226, 218); 
     --text-color: black; 
@@ -26,6 +27,14 @@
     font-family: 'Roboto'
   }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 @import "partials/navbar.scss";
 
 // Recipes sass style
@@ -35,3 +44,6 @@
 @import "partials/hero.scss";
 
 @import "partials/footer.scss";
+
+// Settings
+@import "partials/setting.scss";
