@@ -23,7 +23,7 @@ export default function PreviousSearchDiet({ onSearch }) {
     return (
         <div>
             <div className="previous-search">
-                <h3> Searches type of diets</h3>
+                <h2> Searches type of diets</h2>
                 <div className="previous-searching-container">
                     {searches.map((search, index) => (
                         <div
