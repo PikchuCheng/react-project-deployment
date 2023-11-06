@@ -1,5 +1,12 @@
 import {Link} from 'react-router-dom'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faHome, faList, faCog, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+
+
+
+
+
 import React from 'react'
 
 
@@ -12,9 +19,11 @@ export default function Sidebar({close}) {
 
        <div className='sidebar-links'>
 
-        <Link to="/">Home</Link>
-        <Link to="/Recipes">Recipes</Link>
-        <Link to="/Setting">Settings</Link>
+        <Link to="/"><FontAwesomeIcon icon={faHome} />Home</Link>
+        <Link to="/Recipes"><FontAwesomeIcon icon={faList} /> Recipes</Link>
+        <Link to="/Setting"><FontAwesomeIcon icon={faCog} />Settings</Link>
+        <Link to="/Contact"><FontAwesomeIcon icon={faEnvelope} />Contact</Link>
+
 
 
       </div>
