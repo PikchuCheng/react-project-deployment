@@ -176,10 +176,10 @@ function changeTheme(index) {
 
   return (
     <div className="setting">
-      <h2>Setting Page</h2>
+      <h1 className="h2-settings">Setting Page</h1>
 
       <div className="settings-section">
-        <h2>Preferred Theme</h2>
+        <h2 className="h2-settings">Preferred Theme</h2>
         <div className="options-container color">
           <div className="options light" onClick={() => changeTheme(0)}>
             {theme === 0 && (
@@ -220,7 +220,7 @@ function changeTheme(index) {
       </div>
 
       <div className="settings-section">
-        <h2>Nice Color</h2>
+        <h2 className="h2-settings">Nice Color</h2>
         <div className="options-container color">
           {niceColors.map((color, index) => (
             <div
@@ -240,7 +240,7 @@ function changeTheme(index) {
       </div>
 
       <div className="settings-section">
-        <h2>Font Family</h2>
+        <h2 className="h2-settings">Font Family</h2>
         <div className="options-container color">
           {fontFamilies.map((font, index) => (
             <button
@@ -260,7 +260,7 @@ function changeTheme(index) {
      
 
       <div className="settings-section">
-        <h2>Font Size</h2>
+        <h2 className="h2-settings">Font Size</h2>
         <div className="options-container color">
           {fontSizes.map((size, index) => (
             <button key={index} onClick={() => changeFontSize(index)}>
