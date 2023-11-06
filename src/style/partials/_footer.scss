@@ -1,11 +1,14 @@
 .footer{
-    background-color: black;
-    color: white;
+    background-color:var(--primary-color);
+    color: var(--text-color);
     display: grid;
     grid-template-columns:2fr 1fr 1fr ;
+    grid-template-rows: 2fr;
     padding: 4em;
+    padding-block: 15vh;
     column-gap: 30px;
     margin-top: 10em;
+    letter-spacing: .2em;
 
 
     .footer-section{
@@ -17,9 +20,22 @@
         p.title{
             opacity: 1;
             font-weight: bold;
+            font-size: 20px;
         }
+
+       
     }
 }
+
+.social-icon {
+    font-size: 24px; 
+    margin-right: 10px; 
+  }
+ 
+  
+  
+  
+
 
 
 @media screen and (max-width: 768px){

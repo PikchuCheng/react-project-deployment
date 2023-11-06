@@ -1,4 +1,6 @@
 
+import {Link} from 'react-router-dom'
+
 import { useState } from 'react'
 import React from 'react'
 
@@ -16,7 +18,7 @@ export default function Contact() {
         })
 
     const [showThankYou, setShowThankYou] = useState(false);
-
+    const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 
         function handleChange(event) {
           const { name, value } = event.target;
@@ -24,17 +26,27 @@ export default function Contact() {
             ...data,
             [name]: value
           });
+          setIsCheckboxChecked(event.target.checked)
         }
 
       function handleSubmit (event) {
       event.preventDefault()
+
       
       console.log(data)
 
-      if (data.firstname && data.lastname && data.email ) {
-        setShowThankYou(true);
 
+
+      if (isCheckboxChecked && data.firstname && data.lastname && data.email) {
+        setShowThankYou(true);
+        
         document.querySelector('.form-container').classList.add('blur');
+       
+      }else{
+
+        alert("Please fill out all fields")
+
+       
       }
    
 
@@ -48,26 +60,39 @@ export default function Contact() {
 
 <div className="form-container">
 
-<h1>SUBSCRIBE</h1>
-<h4>Never miss a recipe!</h4>
+<h1>Subscribe</h1>
+<h2>Never miss a recipe!</h2>
     
     
-<p>Sign up with your email address to receive news and updates.</p>
+<h2>Sign up with your email address to receive news and updates.</h2>
     
 
 
-    <form className='container' onSubmit= {handleSubmit}>
+    <form onSubmit= {handleSubmit}>
     
+    <div class="input-container">
       <br/>
-      <input name = "firstname" onChange= {handleChange} type='text' placeholder='First Name' />
-     
-      <input name = "lastname"  onChange= {handleChange} type='text' placeholder='Last Name' />
-     
-      <br/>
-      <input name = "email" onChange= {handleChange} type='email' placeholder='Email Address' />
+      <input  name = "firstname" readOnly={isCheckboxChecked} id="firstname" onChange= {handleChange} type='text' placeholder='First Name' autofocus={isCheckboxChecked}/>
+      
+      <input  name = "lastname" readOnly={isCheckboxChecked} id="lastname" onChange= {handleChange} type='text' placeholder='Last Name' autofocus={isCheckboxChecked}/>
       <br/>
 
-     
+      
+      </div>
+      
+      <div class="input-container1">
+      <input name = "email" readOnly={isCheckboxChecked} onChange= {handleChange} type='email' placeholder='Email Address' autofocus={isCheckboxChecked}/>
+      <br/>
+      </div>
+
+
+      <input type="checkbox" name="checkbox" onChange={handleChange}/>
+
+<label className='term'>
+  By clicking this box, you agree UseRecipes to collect your name and email to receive our latest newsletter!
+</label>
+
+
 
     {/* <h3>Subscription</h3>
     <input value= "one month" onChange= {handleChange} name='sub' type='radio' /><label>one month</label><br />
@@ -75,17 +100,14 @@ export default function Contact() {
     <input value= "No"  onChange= {handleChange} name='sub' type='radio' checked={true}/><label>no thanks</label><br />
  */}
 
-
  
- 
-
- 
-        <button className='button' type="submit">Sign Up</button>
-       
-        <br />
-        <h5>We respect your privacy.</h5>
+   <div class="button-container">
+      <button type="submit">SIGN UP</button>
+   </div>
        
     </form>
+
+   
 
     </div>
 
@@ -95,6 +117,7 @@ export default function Contact() {
 
         <div className="thank-you-popup">
           <p>Thank you for your submission</p>
+          <button className='button-submit' onClick={() => setShowThankYou(false)}><Link to="/"> Back to Home</Link></button>
         </div>
 
 
