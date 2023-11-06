@@ -6,6 +6,7 @@ import Recipes from "./pages/Recipes";
 import Setting from "./pages/Setting";
 import Footer from "./Components/Footer";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/setting" element={<Setting />} /> 
+          <Route path="/404" element={<NotFound/>}/>
 
         </Routes>
       </div>

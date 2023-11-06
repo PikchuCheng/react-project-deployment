@@ -1,90 +1,143 @@
-.setting{
-    padding: 5em;
+.setting {
+  padding: 5em;
+  margin: 3em auto;
+  width: 100%;
+  background: cadetblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  background-color: rgba(245, 245, 245, 0.448);
+
+  .h2-settings{
+    font-family: var(--font-family);
+   width: fit-content;
+   margin-bottom: 2em;
+  }
+
+
+  .settings-section {
     margin: 3em auto;
     width: 100%;
-    background:  cadetblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-  
-  .settings-section{
-    margin: 3em auto;
-    width: 100%;
-  
-    .color{
+    background-color: transparent;
+
+    .color {
       flex-wrap: wrap;
+     
     }
-  
-    button{
-      padding: .5em;
-      background-color: #13547a;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-  
+
+        button {
+          padding: .5em;
+          background-color: #13547a;
+          align-items: center;
+          appearance: none;
+          background-color: #FCFCFD;
+          border-radius: 4px;
+          border-width: 0;
+          box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+          box-sizing: border-box;
+          color: #36395A;
+          cursor: pointer;
+          display: inline-flex;
+          font-family: var(--font-family);
+          height: 48px;
+          justify-content: center;
+          line-height: 1;
+          list-style: none;
+          overflow: hidden;
+          padding-left: 16px;
+          padding-right: 16px;
+          position: relative;
+          text-align: left;
+          text-decoration: none;
+          transition: box-shadow .15s, transform .15s;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+          white-space: nowrap;
+          will-change: box-shadow, transform;
+          font-size: 18px;
+       
+    
+        &:focus {
+          box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        }
+    
       &:hover {
-        background-color: #0c3952; 
-        transform: scale(1.1); 
-      }
-      span{
+          box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+          transform: translateY(-2px);
+        }
+    
+       &:active {
+          box-shadow: #D6D6E7 0 3px 7px inset;
+          transform: translateY(2px);
+        }
+
+      span {
         margin-right: .3em;
       }
     }
-   
-    .options-container{
-      background-color: #537895;
+
+    .options-container {
+      background:var(--primary-color);
       box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
       padding: 1em;
       border-radius: 5px;
       border-left: .5em solid #09203f;
       display: flex;
       gap: 1em;
-  
-      .options{
+      font-family: var(--font-family);
+
+      .options {
         width: 3.5em;
         height: 3.5em;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
         display: flex;
         align-items: center;
         justify-content: center;
-  
-        &.blu{
-          background: linear-gradient(to top, #09203f, #537895);
-         
+
+        &.light {
+          background: #fff;
+
         }
-  
-        &.green{
+
+        &.blu {
+          background: linear-gradient(to top, #09203f, #537895);
+
+        }
+
+        &.green {
           background: linear-gradient(to top right, #13547a, #80d0c7);
         }
-  
-        &.soft{
+
+        &.soft {
           background: linear-gradient(to bottom right, #85CBCC, #F9E2AE, #fbc78f);
         }
-  
-        &.pinky{
+
+        &.pinky {
           background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
         }
-  
-        .check{
+
+        .check {
           background-color: #09203f;
-          width:1.3em;
-          height:1.3em;
+          width: 1.3em;
+          height: 1.3em;
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-  
-          svg{
+
+          svg {
             width: 1em;
+            color: #fff;
           }
         }
-  
-        
-        
-        
+
       }
     }
   }
-  }
+}
