@@ -116,7 +116,7 @@ export default function Contact() {
       
 
         <div className="thank-you-popup">
-          <p>Thank you for your submission</p>
+          <h2>Thank you for your submission!</h2>
           <button className='button-submit' onClick={() => setShowThankYou(false)}><Link to="/"> Back to Home</Link></button>
         </div>
 
