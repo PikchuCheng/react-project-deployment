@@ -29,7 +29,7 @@ function closeSidebar(){
 
     <>
 
-    <div className= "navbar container">
+    <div className= "navbar container-navbar">
 
    
         <a href="#!" className='logo'>Use<span>Recipes</span></a>

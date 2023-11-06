@@ -1,36 +1,24 @@
 :root {
+  --background: #fff;
+  --background-light:#fff;
+  --shadow-color:rgb(0,0,0,0.2);
+  --primary-color: rgb(130, 226, 218); 
+  --text-color: black; 
+  --text-light:#575757;
+  --font-size:16px;
+  --animation-speed:1;
+}
 
-
-    --background-color: white;
-    --primary-color: rgb(130, 226, 218); 
-    --text-color: black; 
-
-
-    font-family: Helvetica, Inter, system-ui, Avenir,  Arial, sans-serif;
-    line-height: 1.6;
-    font-weight: 500;
-    font-size: 30px;
-  
-    color-scheme: light dark;
-    color: rgba(32, 30, 30, 0.87);
-    /* background-color: #242424; */
-  
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  body{
-    padding-top: 300px;
-    font-family: 'Roboto'
-  }
+body{
+  padding-top: 300px;
+  font-family: 'Poppins', sans-serif;
+  background: var(--background);
+}
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 
