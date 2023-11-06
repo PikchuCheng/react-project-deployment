@@ -14,7 +14,7 @@ const RecipeCard = ({ recipe }) => {
         className="recipe-summary"
         dangerouslySetInnerHTML={{ __html: recipe.summary }}
       ></p>
-      <button onClick={() => window.open(recipe.sourceUrl)}>
+      <button className="button-87" onClick={() => window.open(recipe.sourceUrl)}>
         View Recipe
       </button>
     </div>
