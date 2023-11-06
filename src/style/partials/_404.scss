@@ -1,0 +1,172 @@
+
+* {
+   
+    overflow: hidden;
+}
+
+.body-not-found {
+    background-image: linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4),
+        linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+    background-color: #F4F7F7;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.moire {
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4),
+        linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+    animation: rotate 10s ease-in-out 2s alternate infinite;
+    box-shadow: 0 0 0 8px #fff,
+        0 0 10px 8px rgba(0, 0, 0, .3);
+}
+
+.page {
+    width: 50%;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    font-size: 3em;
+
+    h2{
+        width: 100%;
+    }
+}
+
+.page1 {
+    position: absolute;
+    top: 460px;
+    left: 0;
+    right: -650px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    font-size: 3em;
+}
+
+.pag {
+    position: absolute;
+    top: 460px;
+    right: 160px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    font-size: 3em;
+
+}
+
+.moire2 {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4),
+        linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+    animation: rotate 10s ease-in-out 2s infinite;
+    box-shadow: 0 0 0 8px #fff,
+        0 0 10px 8px rgba(0, 0, 0, .3);
+}
+
+.moire3 {
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4),
+        linear-gradient(45deg, #C4EDE4 25%, transparent 25%, transparent 75%, #C4EDE4 75%, #C4EDE4);
+    background-size: 22px 22px;
+    background-position: 0 0, 11px 11px;
+    animation: rotate 10s ease-in-out 1s infinite;
+    box-shadow: 0 0 0 8px #fff,
+        0 0 10px 8px rgba(0, 0, 0, .3);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(90deg)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .moire {
+        width: 300px;
+        height: 300px;
+    }
+
+    .moire2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .moire3 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .page,
+    .pag {
+        position: initial;
+        display: table-row;
+        font-size: 1.5em;
+    }
+
+    .page1{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1520px) {
+  
+
+    .moire {
+        width: 800px;
+        height: 800px;
+    }
+
+    .moire2 {
+        width: 180px;
+        height: 180px;
+    }
+
+    .moire3 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .page,
+    .pag {
+        font-size: 2.5em;
+        position: initial;
+        display: table-row;
+    }
+
+    .page1{
+        display: none;
+    }
+}
