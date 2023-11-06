@@ -1,9 +1,15 @@
 import {Link} from 'react-router-dom'
 
+
 import React from 'react'
 import {useState} from "react"
 import Sidebar from './Sidebar'
+
+
+
 import Home from '../pages/Home'
+
+
 
 
 
@@ -26,11 +32,11 @@ function closeSidebar(){
     <div className= "navbar container">
 
    
-        <a href="#!" className='logo'>Use<span>Repices</span></a>
+        <a href="#!" className='logo'>Use<span>Recipes</span></a>
       
         <div className='nav-links'>
 
-        <Link to="/">Home</Link>
+        <Link to="/"> Home</Link>
         <Link to="/Recipes">Recipes</Link>
         <Link to="/Setting">Setting</Link>
         <Link to="/Contact">Contact</Link>
