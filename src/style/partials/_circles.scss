@@ -13,35 +13,29 @@
 }
 
 .desserts-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;  
-    margin-top: 50px;
-    padding-top: 30px; 
-    
-    
-  }
-  
-  //  .dessert-circle {
-  //   width: 150px;
-  //   height: 150px;
-  //   position: relative;
-    
-     
-  // }
-  
+  width: 80%;
+  margin: 6em auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-top: 30px;
+
   .dessert-circle {
     width: 150px;
     height: 150px;
+    position: relative;
+
     .img {
-    width: 50%;
-    height: 50%;
-    // object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid orange;
-    }
+        width: 100%;
+        height: 100%;
+        border: 1px solid;
+        border-radius: 50%;
+        object-fit: cover;
+      }
   }
-  .btn-viewmore{
+
+  .btn-viewmore {
     position: absolute;
     padding: 4px;
     background-color: rgb(129, 194, 190);
@@ -49,16 +43,7 @@
     width: 80px;
     border-radius: 8px;
     transform: translateX(-50%);
-    bottom: -40px;
-    left: 50%;
-  }
-
-  @media screen and (max-width: 768px){
-    .desserts-container{
-      
-    }
-
-    .dessert-circle{
-      
+    bottom: -50px;
+    left: 3.6em;
   }
 }

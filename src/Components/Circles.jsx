@@ -21,16 +21,21 @@ const Circles = () => {
      <div className='big-container'>
         <div className="desserts-container">
           {deserts.map((desert, index) => (
-          <div className="dessert-circle" key={index}>
-          <img className='img' src={desert.image} alt="" />
-           <button className='btn-viewmore' onClick={() => handleSelectedItem(desert)}>View</button>  
-              
+            <div className="dessert-circle" key={index}>
+              <img className='img' src={desert.image} alt="" />
+              <button
+                className="btn-viewmore"
+                onClick={() => handleSelectedItem(desert)}
+              >
+                View
+              </button>
             </div>
           ))}
+            
         </div>
         </div>
       </>
-  );
+    );
 };
   
   export default Circles;

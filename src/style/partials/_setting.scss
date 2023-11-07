@@ -1,9 +1,9 @@
 .setting {
   padding: 5em;
   margin: 3em auto;
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: var(--text-color);
@@ -13,7 +13,7 @@
 
   .h2-settings{
     font-family: var(--font-family);
-   width: fit-content;
+   width: 100%;
    margin-bottom: 2em;
   }
 
@@ -83,9 +83,11 @@
     }
 
     .options-container {
+      width: 70%;
+      margin: auto;
       background:var(--primary-color);
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-      padding: 1em;
+      box-shadow: var(--box-shadow);
+      padding: 2em;
       border-radius: 5px;
       border-left: .5em solid #09203f;
       display: flex;
@@ -119,7 +121,7 @@
         }
 
         &.pinky {
-          background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+          background: linear-gradient(to bottom, #a28089, #f3e7d1, #ffcb74);
         }
 
         &.beach{

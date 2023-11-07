@@ -3,7 +3,7 @@
 const RecipeCard = ({ recipe }) => {
   return (
     <div key={recipe.id} className="recipes-card">
-      <img src={recipe.image} alt={recipe.title} />
+      <img className= "img-from-recipes"src={recipe.image} alt={recipe.title} />
       <h4 className="title">{recipe.title}</h4>
       <ul className="recipe-diet">
         {recipe.diets.map((diet, index) => (
