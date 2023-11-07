@@ -95,16 +95,7 @@ function changeTheme(index) {
     "Courier New, monospace",
   ];
 
-  // function changeFontFamily(index) {
-  //   const _family = fontFamilies[index];
-  //   setFontFamily(_family)
-  //   let _settings = { ...settings };
-  //   for (let key in _family) {
-  //     _settings[key] = _family[key];
-  //   }
-  //   console.log(_family);
-  //   setSettings(_settings);
-  // }
+  
 
   function changeFontFamily(index) {
     const _family = fontFamilies[index];

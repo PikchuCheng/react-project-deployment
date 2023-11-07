@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+import React from 'react'
+import { Link } from 'react-router-dom'
+import NotFound from '../pages/NotFound.jsx'
+
+>>>>>>> c1bd5d444b7cea94c9db1a94134267a18f60537d
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -33,9 +40,9 @@ export default function Footer() {
 
         <div className='footer-section'>
             <p className='title'>Social Media</p>
-            <p > <FontAwesomeIcon icon={faFacebook} className="social-icon" /> Facebook</p>
-            <p > <FontAwesomeIcon icon={faInstagram} className="social-icon"  />Instagram</p>
-            <p > <FontAwesomeIcon icon={faTwitter} className="social-icon" />Twitter</p>
+            <p > <FontAwesomeIcon icon={faFacebook} className="social-icon" /><Link to="/404">Facebook</Link> </p>
+            <p > <FontAwesomeIcon icon={faInstagram} className="social-icon"  /><Link to="/404">Instagram</Link></p>
+            <p > <FontAwesomeIcon icon={faTwitter} className="social-icon" /><Link to="/404">Twitter</Link></p>
             
 
         </div>
