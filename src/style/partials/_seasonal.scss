@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     padding-top: 4rem;
-    color: rgb(41, 143, 143);
+    color:var(--background-color);
     font-size: 50px;
     font-style: italic;
   }
@@ -10,18 +10,18 @@
   .recipe-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 70px;
-    background-color: rgb(248, 255, 251);
     margin-left: 30px;
     margin-right: 30px;
     margin: 80px;
-  }
-  
+ 
   .recipe-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25%;
+    background-color: aliceblue;
+    width: 300px;
     height: 600px;
     margin-bottom: 80px;
     border: 1px solid grey;
@@ -30,50 +30,64 @@
     text-align: center;
     border-radius: 10px; 
    
-  }
+    
+    .img-recipe {
+      width: 100%;
+       height: 250px;
+       object-fit: cover;
+       border-radius: 10px;
+     
+    }
+   
   .diets{
     display: flex;
     justify-content: space-around;
-    gap: 6px;
-    padding: 0px ;
+    flex-wrap: wrap;
+    
+    gap:5px;
+  }
+    .p-diet{
+      background-color:rgb(232, 232, 97);
+      margin:20px 10px;
+      padding: 5px 25px;
+      border-radius: 20px;
     }
   
-    .diets p{
-      background-color:rgb(232, 232, 97);
+    .recipe-summary{
+      color: black;
       padding: 5px 25px;
       border-radius: 20px;
       font-size: small;
+      line-height: normal;
     }
-  
-  .recipe-card img {
-   width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-  
   }
-  
+
   .recipe-card h2 {
     font-size: 1.5rem;
     
   }
   
-  .recipe-card p {
-    font-size: 1.2rem;
-  }
-  .recipe-card a{
-    font-size: 1.5rem;
-    color: rgb(41, 143, 143);
-     
-  }
-  
   .btn-card{
     background-color:var(--primary-color);
+    color: rgb(41, 143, 143);
+    text-decoration: none;
     width: 90%;
     padding: 15px;
     border-style: none;
     border-radius: 8px;
     font-size:20px ;
-  
+    margin: 0 auto;
+    font-size: 1.5rem;
+
+    &:hover{
+      background-color: var(--background-color);
+    }
   }
-  
+} 
+
+@media screen and (max-width: 768px) {
+  .recipe-card {
+    width: 300px;
+    overflow: hidden;
+  }
+}

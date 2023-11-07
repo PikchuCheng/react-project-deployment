@@ -21,16 +21,16 @@ const Hero = () => {
 return (
 <div className='container-hero'>
 
-    <div className='columnleft'>
-    <h1 className='title'> Yummy Recipes for your Tummy</h1>
+    <div className='column-left'>
+    <h1 className='title-hero'> Yummy Recipes for your Tummy</h1>
     <p className='info'> This is an  excellent website to get top-notch recipes . The site boasts an appealing and easy to navigate interface, as well as plenty of filters to help you customize the recipes you see and also to sort through their variety recipes. The site also features fantastic recipe videos that are often displayed on social media platforms such as Snapchat, Facebook, and TikTok. The site allows users with an account to save recipes, share their creations, and make shopping lists.</p>
     <Link to= "/recipes"><button className='button-recipe'>Our Recipes</button></Link>
     </div>
 
-    <div className='columnimages'>
+    <div className='column-images'>
        {recipes.map((item, index) => (
-      <div className='heroimages' key={index}>
-        <img
+      <div className='hero-images' key={index}>
+        <img className='inside-img'
           src={item?.image}
           alt=""
           />

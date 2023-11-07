@@ -19,7 +19,7 @@ export default function Setting() {
 
  
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(0);
   const themes = [
     {
       "--background": "#fff",

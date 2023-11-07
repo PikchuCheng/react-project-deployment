@@ -122,16 +122,17 @@
       display: flex;
       flex-wrap: wrap;
       width: fit-content;
-      font-size: xx-small;
+      font-size: small;
     }
 
     .recipe-summary { 
       width:100%;
       border-top:2px double grey;
-      font-size: xx-small;
+      font-size: small;
       text-align: justify;
       margin-top: 2px;
       margin-bottom: 40px;
+      line-height: normal;
       a{
         text-decoration: none;
         font-weight: 700;

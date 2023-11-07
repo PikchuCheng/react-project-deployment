@@ -16,27 +16,27 @@ function Seasonal() {
 
   return (
     <>
-      <h1 className="title2"> Heavenly Healthy Herbsty Treats</h1>
+      <h1 className="title2"> Heavenly Healthy Herbsty Soups</h1>
 
       <div className="recipe-list">
         {soup.map((recipe, index) => (
           <div className="recipe-card" key={index}>
-            <img src={recipe.image} alt="" />
+            <img className="img-recipe" src={recipe.image} alt="" />
             <div className="diets">
-              <p>{recipe.diets[0]}</p>
-              <p>{recipe.diets[1]}</p>
+              <div className="p-diet">{recipe.diets[0]}</div>
+              <div className="p-diet">{recipe.diets[1]}</div>
             </div>
             <div>
-              <h2>{recipe.title}</h2>
+              <h2 >{recipe.title}</h2>
               <p
                 className="recipe-summary"
                 dangerouslySetInnerHTML={{
-                  __html: recipe.summary.slice(0, 200),
+                  __html: recipe.summary.slice(0, 199),
                 }}
               ></p>
             </div>
-            <a href={recipe.sourceUrl} target="_blank" rel="noreferrer">
-              <button className="btn-card"> Read More</button>
+            <a className="btn-card" href={recipe.sourceUrl} target="_blank" rel="noreferrer">
+               Read More
             </a>
           </div>
         ))}
