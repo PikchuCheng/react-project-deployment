@@ -46,9 +46,14 @@ export default function Setting() {
       
     },
     {
-      "--background": "linear-gradient(to bottom right, #ff758c, #ff7eb3)",
+      "--background": "linear-gradient(to bottom, #a28089, #f3e7d1, #ffcb74)",
       "--box-shadow": " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
       "--text-color": "#fff",
+    },
+    {
+      "--background": "linear-gradient(to top, #51e2f5, #9df9ef, #edf756, #ffa8b6, #a28089)",
+      "--box-shadow": " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      "--text-color": "#003366",
     }
   ];
 
@@ -67,7 +72,7 @@ function changeTheme(index) {
   const niceColors = [
     "rgb(255, 99, 71)", // Tomato
     "rgb(255, 140, 0)", // DarkOrange
-    "rgb(255, 215, 0)", // Gold
+    "rgb(255, 205, 117)", // Gold
     "rgb(0, 128, 0)", // Green
     "rgb(255, 255, 255)", // Navy
     "rgb(70, 130, 180)", // SteelBlue
@@ -207,8 +212,8 @@ function changeTheme(index) {
               </div>
             )}
           </div>
-          <div className="options beach" onClick={() => changeTheme(4)}>
-            {theme === 4 && (
+          <div className="options beach" onClick={() => changeTheme(5)}>
+            {theme === 5 && (
               <div className="check">
                 <FontAwesomeIcon icon={faCheck} />
               </div>
