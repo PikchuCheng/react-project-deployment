@@ -26,8 +26,12 @@ const [soup, setSoup] = useState([]);
           
           </div>
           <div>
-          <h2>{recipe.title}</h2>
-          <p>{recipe.summary.slice(0, 200)}...</p></div>
+            <h2>{recipe.title}</h2>
+            <p
+        className="recipe-summary"
+        dangerouslySetInnerHTML={{ __html: recipe.summary.slice(0, 200) }} >
+          </p>
+          </div>
           <a href={recipe.sourceUrl} target="_blank" rel="">
             <button className='btn-card'> Read More</button>
           </a>
