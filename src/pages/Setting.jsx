@@ -216,6 +216,13 @@ function changeTheme(index) {
               </div>
             )}
           </div>
+          <div className="options beach" onClick={() => changeTheme(4)}>
+            {theme === 4 && (
+              <div className="check">
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

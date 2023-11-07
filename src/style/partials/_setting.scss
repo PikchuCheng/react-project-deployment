@@ -76,6 +76,8 @@
           transform: translateY(2px);
         }
 
+        
+
       span {
         margin-right: .3em;
       }
@@ -119,6 +121,10 @@
 
         &.pinky {
           background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+        }
+
+        &.beach{
+          background: linear-gradient(to top, #51e2f5, #9df9ef, #edf756, #ffa8b6, #a28089);
         }
 
         .check {

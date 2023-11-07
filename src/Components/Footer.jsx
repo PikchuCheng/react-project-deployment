@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -14,7 +12,7 @@ export default function Footer() {
 
     <div className='footer-section'>
             <p className='title'>UseRecipes</p>
-            <p >UseRecipes is a place where you can get declious recipes all over the world! With UseRecipes, you'll have the world's most delectable dishes at your fingertips, ready to be prepared and savored. Join us on this gastronomic adventure, and let your taste buds travel the world, one delightful recipe at a time.</p>
+            <p >UseRecipes is a place where you can get delicious recipes all over the world! With UseRecipes, you'll have the world's most delectable dishes at your fingertips, ready to be prepared and savored. Join us on this gastronomic adventure, and let your taste buds travel the world, one delightful recipe at a time.</p>
            
 
         </div>
