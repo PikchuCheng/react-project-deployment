@@ -17,18 +17,22 @@ const Circles = () => {
   
     return (
       <>
-     
         <div className="desserts-container">
           {deserts.map((desert, index) => (
-          <div className="dessert-circle" key={index}>
-          <img src={desert.image} alt="" />
-           <button className='btn-viewmore' onClick={() => handleSelectedItem(desert)}>View</button>  
-              
+            <div className="dessert-circle" key={index}>
+              <img className='img' src={desert.image} alt="" />
+              <button
+                className="btn-viewmore"
+                onClick={() => handleSelectedItem(desert)}
+              >
+                View
+              </button>
             </div>
           ))}
+            
         </div>
       </>
-  );
+    );
 };
   
   export default Circles;
