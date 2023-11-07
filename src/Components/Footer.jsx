@@ -46,9 +46,12 @@ export default function Footer() {
 
         <div className='footer-section'>
            
-            <p> Copyright © 2023 UseRecipes  | All right Reserved</p>
+           
+           <p> | <a href='#'>About us</a> | <a href='#'>Terms and Condition </a>|</p>
+            
+           </div>
+ 
 
-        </div>
 
         <div className='footer-section'>
            
@@ -58,12 +61,13 @@ export default function Footer() {
         
        </div>
 
-       <div className='footer-section'>
-           
-          <p> | About us | Terms and Condition |</p>
-           
-          </div>
+     
 
+          <div className='footer-section'>
+           
+           <p> Copyright © 2023 UseRecipes  | All right Reserved</p>
+
+       </div>
 
      
         
