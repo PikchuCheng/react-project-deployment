@@ -72,16 +72,16 @@ export default function Contact() {
     
     <div class="input-container">
       <br/>
-      <input  name = "firstname" readOnly={isCheckboxChecked} id="firstname" onChange= {handleChange} type='text' placeholder='First Name' autofocus={isCheckboxChecked}/>
+      <input  name = "firstname" readOnly={isCheckboxChecked} id="firstname" onChange= {handleChange} type='text' placeholder='First Name'/>
       
-      <input  name = "lastname" readOnly={isCheckboxChecked} id="lastname" onChange= {handleChange} type='text' placeholder='Last Name' autofocus={isCheckboxChecked}/>
+      <input  name = "lastname" readOnly={isCheckboxChecked} id="lastname" onChange= {handleChange} type='text' placeholder='Last Name'/>
       <br/>
 
       
       </div>
       
       <div class="input-container1">
-      <input name = "email" readOnly={isCheckboxChecked} onChange= {handleChange} type='email' placeholder='Email Address' autofocus={isCheckboxChecked}/>
+      <input name = "email" readOnly={isCheckboxChecked} onChange= {handleChange} type='email' placeholder='Email Address'/>
       <br/>
       </div>
 
@@ -94,18 +94,17 @@ export default function Contact() {
 
 
 
-    {/* <h3>Subscription</h3>
-    <input value= "one month" onChange= {handleChange} name='sub' type='radio' /><label>one month</label><br />
-    <input value= "six month"  onChange= {handleChange} name='sub' type='radio' /><label>six month</label><br />
-    <input value= "No"  onChange= {handleChange} name='sub' type='radio' checked={true}/><label>no thanks</label><br />
- */}
-
  
    <div class="button-container">
-      <button type="submit">SIGN UP</button>
+      <button className='sing-up-button' type="submit">SIGN UP</button>
    </div>
        
     </form>
+
+    <div>
+
+      <p className='bottom-signup'>At UseRecipes we value all of our customers and understand that you care about the privacy and security of your personal information. Our Privacy Policy applies to UseRecipes's collection, storage, use and disclosure of personal information that may be collected by us when you interact with Barnes & Noble, such as when you visit our stores or websites, or use our devices or applications, participate in our Member Program, or deal with customer service.</p>
+    </div>
 
    
 
