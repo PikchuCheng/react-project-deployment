@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-=======
-import React from 'react'
 import { Link } from 'react-router-dom'
-import NotFound from '../pages/NotFound.jsx'
-
->>>>>>> c1bd5d444b7cea94c9db1a94134267a18f60537d
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
