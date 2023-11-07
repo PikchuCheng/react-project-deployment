@@ -96,6 +96,8 @@ export default function Footer() {
                 <img className='img-footer' src="../images/profile.png" />
                 <p>Pikchu</p>
                 <p>Developer</p>
+
+                
               </div>
 
               <div class="profile-container">
