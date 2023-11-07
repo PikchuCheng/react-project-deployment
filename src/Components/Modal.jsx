@@ -20,7 +20,6 @@ function Modal() {
           <h2 className='titlecard'>{selectedItem.title}</h2>
           <img src={selectedItem?.image} alt="" />
           
-          <p></p>
           <h3>Preparation Time: {selectedItem.readyInMinutes}min</h3>
           <h3>Potions: {selectedItem.servings}</h3>
           

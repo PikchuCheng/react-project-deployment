@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 export default function Setting() {
 
   const [settings, setSettings] = useState({
-    "--background-color": "#fff",
+    "--background-color": "linear-gradient(to top #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
     "--background-light": "rgb(223, 216, 216)",
     "--primary-color": "rgb(255, 99, 71)",
     "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
@@ -22,7 +22,7 @@ export default function Setting() {
   const [theme, setTheme] = useState(0);
   const themes = [
     {
-      "--background": "#fff",
+      "--background": "linear-gradient(to top, #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
       "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
       "--text-color": "#0A0A0A",
     
@@ -73,12 +73,12 @@ function changeTheme(index) {
     "rgb(255, 99, 71)", // Tomato
     "rgb(255, 140, 0)", // DarkOrange
     "rgb(255, 205, 117)", // Gold
-    "rgb(0, 128, 0)", // Green
-    "rgb(255, 255, 255)", // Navy
+    "rgb(131, 226, 218) ", // Green
+    "rgb(0, 73, 184)", // Navy
     "rgb(70, 130, 180)", // SteelBlue
-    "rgb(255, 69, 0)", // Red-Orange
-    "rgb(128, 0, 128)", // Purple
-    "rgb(255, 20, 147)", // DeepPink
+    "rgb(200, 69, 200)", // Red-Orange
+    "rgb(80, 0, 255)", // Purple
+    "rgb(189, 20, 147)", // DeepPink
     "rgb(0, 139, 139)", // DarkCyan
   ];
 
@@ -92,9 +92,9 @@ function changeTheme(index) {
 
   const [fontFamily, setFontFamily] = useState(0);
   const fontFamilies = [
-    "Arial, sans-serif",
-    "Times New Roman, serif",
-    "Verdana, sans-serif",
+    "DM Serif Display, serif",
+    "playball",
+    "Nunito Sans",
     "Helvetica, sans-serif",
     "Georgia, serif",
     "Courier New, monospace",
