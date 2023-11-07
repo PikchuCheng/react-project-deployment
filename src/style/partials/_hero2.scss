@@ -1,20 +1,4 @@
-// :root {
-//     font-family: Nunito Sans, sans-serif,system-ui, Inter,  Arial, Helvetica, Avenir, ;
-//     line-height: 1.5;
-//     font-weight: 500;
-  
-//     color-scheme: light dark;
-//     color: rgba(32, 30, 30, 0.87);
-//     /* background-color: #242424; */
-  
-//     font-synthesis: none;
-//     text-rendering: optimizeLegibility;
-//     -webkit-font-smoothing: antialiased;
-//     -moz-osx-font-smoothing: grayscale;
-//     -webkit-text-size-adjust: 100%;
-//   }
-  
-  .container-hero{
+.container-hero{
     background-color: rgb(233, 240, 235);
     display: flex;
     justify-content: space-around;
@@ -23,15 +7,11 @@
   
   }
   
-  
-  
-  
   .columnleft{
-    /* background-color: brown; */
-  width: 50%;
+   width: 50%;
   padding: 100px;
-  
   }
+  
   
   .info{
     line-height: 1.8;
@@ -59,64 +39,20 @@
     position: relative;
     gap: 30px;
     padding-right: 100px;
-  
-    /* padding: 30px; */
-  
   }
+  
   
   .heroimages{
     width: 240px;
     height: 200px;
    border: 2px solid;
    overflow: hidden;
-   border-radius: 10px;
+   border-radius: 8px;
    position: relative;
   img{
     width:100%;
     height: 100%;
   }
-  
-  }
-  
-  .btn-viewmore{
-    position: absolute;
-    padding: 4px;
-    background-color: rgb(118, 231, 224);
-    font-size: 25px;
-    width: 100px;
-    border-radius: 8px;
-    bottom: 5px;
-    left: 30%;
   }
   
   
-  /* Modal css */
-  
-  .modalcontainer{
-    background-color: aquamarine;
-    max-width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius:30px;
-    padding: 20px;
-    position: relative;
-  }
-  
-  .modalcontainer img{
-   width: 100%;
-   height:300px;
-   object-fit: cover;
-  
-   top: 20px;
-  }
-  
-  .btn-cancel{
-    position: absolute;
-    height:50px;
-    width: 50px;
-    left: 48%;
-  }
-  .titlecard{
-   padding-top: 45px;
-   
-  }
