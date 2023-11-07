@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom'
-import { useState } from 'react'; 
+
+import React from 'react'
+import { useState } from "react"
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -17,18 +19,32 @@ export default function Footer() {
   return (
 
     <div className="footer">
-      <div className="footer-section">
-        <p className="title">UseRecipes</p>
-        <p>
-          UseRecipes is a place where you can get delicious recipes all over the
-          world! With UseRecipes, you'll have the world's most delectable dishes
-          at your fingertips, ready to be prepared and savored. Join us on this
-          gastronomic adventure, and let your taste buds travel the world, one
-          delightful recipe at a time.
-        </p>
-      </div>
+    
 
     
+    <div className='footer-section'>
+            <p className='title'>UseRecipes</p>
+
+           
+      <p >UseRecipes is a place where you can get delicious recipes all over the world! With UseRecipes, you'll have the world's most delectable dishes at your fingertips, ready to be prepared and savored. Join us on this gastronomic adventure, and let your taste buds travel the world, one delightful recipe at a time.</p>
+
+</div>
+
+    <div className='footer-section'>
+            <p className='title'>Contact</p>
+            <p >userecipes_foodieclub@gmail.com</p>
+            <p>+49 030 17171717</p>
+      </div>
+
+        <div className='footer-section'>
+            <p className='title'>Social Media</p>
+
+
+            <p > <FontAwesomeIcon icon={faFacebook} className="social-icon" /><Link to="/404">Facebook</Link> </p>
+            <p > <FontAwesomeIcon icon={faInstagram} className="social-icon"  /><Link to="/404">Instagram</Link></p>
+            <p > <FontAwesomeIcon icon={faTwitter} className="social-icon" /><Link to="/404">Twitter</Link></p>
+            </div>
+
 
       <div className='footer-section'>
             <p className='title'>Contact</p>
@@ -97,7 +113,7 @@ export default function Footer() {
                 <p>Pikchu</p>
                 <p>Developer</p>
 
-                
+
               </div>
 
               <div class="profile-container">
