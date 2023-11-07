@@ -5,6 +5,7 @@
     color: rgb(41, 143, 143);
     font-size: 50px;
     font-style: italic;
+    padding-top: 300px;
   }
   
   .recipe-list {
@@ -69,11 +70,12 @@
   
   .btn-card{
     background-color: orange;
-    width: 100%;
+    width: 90%;
     padding: 15px;
     border-style: none;
     border-radius: 8px;
     font-size:20px ;
+    align-items: center;
   
   }
   

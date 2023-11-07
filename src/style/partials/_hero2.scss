@@ -1,6 +1,7 @@
 .container-hero{
     background-color: rgb(233, 240, 235);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     padding: 100px;
@@ -9,7 +10,7 @@
   
   .columnleft{
    width: 50%;
-  padding: 100px;
+  padding-top: 100px;
   }
   
   
@@ -55,4 +56,12 @@
   }
   }
   
-  
+  @media screen and (max-width: 768px){
+    .container-hero{
+      
+    }
+
+    .columnleft{
+      
+    }
+  }

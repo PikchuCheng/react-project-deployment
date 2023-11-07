@@ -1,12 +1,24 @@
 /* Desert-Circles */
-
+.h-desserts{
+  color: rgb(1, 8, 2);
+  font-size: 40px;
+  padding-top: 150px;
+  margin-bottom: 30px
+}
+.big-container{
+  background-color: rgb(195, 225, 204);
+  padding: 30px;
+  padding-bottom: 200px;
+  border-radius: 20px;
+}
 
 .desserts-container {
     display: flex;
     justify-content: space-around;
-     flex-wrap: wrap;  
+    flex-wrap: wrap;  
     margin-top: 50px;
     padding-top: 30px; 
+    
     
   }
   
@@ -37,3 +49,13 @@
     bottom: -40px;
     left: 50%;
   }
+
+  @media screen and (max-width: 768px){
+    .desserts-container{
+      
+    }
+
+    .dessert-circle{
+      
+  }
+}

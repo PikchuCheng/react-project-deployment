@@ -14,7 +14,7 @@ const [soup, setSoup] = useState([]);
     
       return (
         <>
-        <h1 className='title2'> Heavenly Healthy Herbsty Treats</h1>
+        <h1 className='title2'> "Cozy Up to Winter's Best: A Hearty Collection of Seasonal Soups"</h1>
 
         <div className="recipe-list">
       {soup.map((recipe, index) => (

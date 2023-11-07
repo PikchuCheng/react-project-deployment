@@ -17,7 +17,8 @@ const Circles = () => {
   
     return (
       <>
-     
+     <h2 className='h-desserts'>"Sweet Temptations: Delectable Dessert Recipes to Satisfy Your Cravings"</h2>
+     <div className='big-container'>
         <div className="desserts-container">
           {deserts.map((desert, index) => (
           <div className="dessert-circle" key={index}>
@@ -26,6 +27,7 @@ const Circles = () => {
               
             </div>
           ))}
+        </div>
         </div>
       </>
   );
