@@ -14,12 +14,14 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ overflow:visible;
 }
 
 body{
-    padding-top: 200px;
+    padding-top: 180px;
     background: var(--background);
     font-family: var(--font-family);
+    color: rgb(255, 205, 117);
 }
 
 
@@ -29,8 +31,12 @@ body{
 
 @import "partials/recipes.scss";
 
-@import "partials/hero.scss";
+
 @import "partials/hero2.scss";
+@import "partials/circles.scss";
+@import "partials/modal.scss";
+@import "partials/seasonal.scss";
+
 
 @import "partials/footer.scss";
 

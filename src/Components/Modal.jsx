@@ -17,15 +17,12 @@ function Modal() {
 {selectedItem && isModalOpen ? (
         <div className='modalcontainer'>
           <MdCancel className='btn-cancel' onClick={handleCancelModal} />
-          <h3 className='titlecard'>{selectedItem.title}</h3>
+          <h2 className='titlecard'>{selectedItem.title}</h2>
           <img src={selectedItem?.image} alt="" />
-         
-
-          <p>Preparation Time:</p>
-          <h4> {selectedItem.readyInMinutes}min</h4>
-          <br />
-          <p>Potions:</p>
-          <h4>{selectedItem.servings}</h4>
+          
+          <p></p>
+          <h3>Preparation Time: {selectedItem.readyInMinutes}min</h3>
+          <h3>Potions: {selectedItem.servings}</h3>
           
         </div>
       ) : null}

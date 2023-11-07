@@ -1,8 +1,7 @@
+
 import React from 'react'
 import { useState } from "react"
 import {Link} from 'react-router-dom'
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -31,8 +30,10 @@ export default function Footer() {
     
     <div className='footer-section'>
             <p className='title'>UseRecipes</p>
-            <p >UseRecipes is a place where you can get declious recipes all over the world! With UseRecipes, you'll have the world's most delectable dishes at your fingertips, ready to be prepared and savored. Join us on this gastronomic adventure, and let your taste buds travel the world, one delightful recipe at a time.</p>    
-    </div>
+
+           
+      <p >UseRecipes is a place where you can get delicious recipes all over the world! With UseRecipes, you'll have the world's most delectable dishes at your fingertips, ready to be prepared and savored. Join us on this gastronomic adventure, and let your taste buds travel the world, one delightful recipe at a time.</p>
+
 
     <div className='footer-section'>
             <p className='title'>Contact</p>
@@ -42,10 +43,13 @@ export default function Footer() {
 
         <div className='footer-section'>
             <p className='title'>Social Media</p>
-            <p > <FontAwesomeIcon icon={faFacebook} className="social-icon" /> Facebook</p>
-            <p > <FontAwesomeIcon icon={faInstagram} className="social-icon"  />Instagram</p>
-            <p > <FontAwesomeIcon icon={faTwitter} className="social-icon" />Twitter</p>
-      </div>
+
+
+            <p > <FontAwesomeIcon icon={faFacebook} className="social-icon" /><Link to="/404">Facebook</Link> </p>
+            <p > <FontAwesomeIcon icon={faInstagram} className="social-icon"  /><Link to="/404">Instagram</Link></p>
+            <p > <FontAwesomeIcon icon={faTwitter} className="social-icon" /><Link to="/404">Twitter</Link></p>
+            </div>
+
 
       <div className='footer-section'>
            

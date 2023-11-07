@@ -18,8 +18,10 @@
   }
 
  .previous-searching-container{
+  width: 80%;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   flex-wrap: wrap;
 
   .search-item{
@@ -34,10 +36,11 @@
  }
 
  .find-box{
-  margin-top: 1em;
+  width: 30%;
+  margin:0 0 0 58em;
   input{
-    width: 25%;
-    height: 24px;
+    width: 70%;
+    height: 40px;
     border-radius: 3px;
     border: transparent;
     outline:none ;
