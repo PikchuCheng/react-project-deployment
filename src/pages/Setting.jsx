@@ -9,7 +9,7 @@ export default function Setting() {
     "--background-color": "#fff",
     "--background-light": "rgb(223, 216, 216)",
     "--primary-color": "rgb(255, 99, 71)",
-    "--box-shadow": "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+    "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
     "--text-color": "#0A0A0A",
     "--text-light": "rgb(255, 105, 180)",
     "--font-family": "Georgia, serif",
@@ -23,13 +23,13 @@ export default function Setting() {
   const themes = [
     {
       "--background": "#fff",
-      "--box-shadow": "rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
       "--text-color": "#0A0A0A",
     
     },
     {
       "--background": "linear-gradient(to top right, #13547a, #80d0c7)",
-      "--box-shadow": " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      "--box-shadow": " 4px 4px 4px rgba(74, 69, 69, 0.736)",
       "--text-color": "#fff",
    
     },
