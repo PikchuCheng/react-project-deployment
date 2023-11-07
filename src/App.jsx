@@ -7,6 +7,8 @@ import Setting from "./pages/Setting";
 import Footer from "./Components/Footer";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Terms from "./pages/Terms";
+
 
 function App() {
   return (
@@ -17,11 +19,15 @@ function App() {
         <Routes>
         
           <Route path="/" element={<Home />} />
+
           <Route path="/recipes" element={<Recipes />} />
 
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/setting" element={<Setting />} /> 
+
+          <Route path="/terms" element={<Terms />} /> 
+          
           <Route path="/404" element={<NotFound/>}/>
 
         </Routes>

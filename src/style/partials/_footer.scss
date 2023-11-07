@@ -1,8 +1,8 @@
-.footer{
-    background-color:var(--primary-color);
+.footer {
+    background-color: var(--primary-color);
     color: var(--text-color);
     display: grid;
-    grid-template-columns:2fr 1fr 1fr ;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 2fr;
     padding: 4em;
     padding-block: 15vh;
@@ -10,52 +10,89 @@
     letter-spacing: .2em;
 
 
-    .footer-section{
-        p{
+    .footer-section {
+        p {
             opacity: .8;
 
-            a{
-                color:var(--text-color);
+            a {
+                color: var(--text-color);
                 text-decoration: none;
             }
         }
 
-        p.title{
+        p.title {
             opacity: 1;
             font-weight: bold;
             font-size: 20px;
         }
 
-       
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
     }
 }
 
 .social-icon {
-    font-size: 24px; 
-    margin-right: 10px; 
-  }
- 
-  
-  
-  
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.about-us-box {
+    width: 300px;
+    height: 300px;
+
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+
+.img-footer{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.footer-button {
+
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    font-size: 1em;
+    letter-spacing: .2em;
+    margin: 0;
+    font-family: var(--font-family)
+}
 
 
 
-@media screen and (max-width: 768px){
-    .footer{
+@media screen and (max-width: 768px) {
+    .footer {
 
         display: grid;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         gap: 50px;
     }
 
-    .footer-section{
+    .footer-section {
 
-        p{
+        p {
             opacity: .8;
         }
 
-        p.title{
+        p.title {
             opacity: 1;
             font-weight: bold;
         }
