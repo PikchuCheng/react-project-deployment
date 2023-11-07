@@ -2,7 +2,6 @@
   padding: 5em;
   margin: 3em auto;
   width: 100%;
-  background: cadetblue;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,7 +9,7 @@
   color: var(--text-color);
   font-size: var(--font-size);
   font-family: var(--font-family);
-  background-color: rgba(245, 245, 245, 0.448);
+  
 
   .h2-settings{
     font-family: var(--font-family);
@@ -76,6 +75,8 @@
           transform: translateY(2px);
         }
 
+        
+
       span {
         margin-right: .3em;
       }
@@ -119,6 +120,10 @@
 
         &.pinky {
           background: linear-gradient(to bottom right, #ff758c, #ff7eb3);
+        }
+
+        &.beach{
+          background: linear-gradient(to top, #51e2f5, #9df9ef, #edf756, #ffa8b6, #a28089);
         }
 
         .check {

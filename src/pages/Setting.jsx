@@ -95,16 +95,7 @@ function changeTheme(index) {
     "Courier New, monospace",
   ];
 
-  // function changeFontFamily(index) {
-  //   const _family = fontFamilies[index];
-  //   setFontFamily(_family)
-  //   let _settings = { ...settings };
-  //   for (let key in _family) {
-  //     _settings[key] = _family[key];
-  //   }
-  //   console.log(_family);
-  //   setSettings(_settings);
-  // }
+  
 
   function changeFontFamily(index) {
     const _family = fontFamilies[index];
@@ -210,6 +201,13 @@ function changeTheme(index) {
             )}
           </div>
           <div className="options pinky" onClick={() => changeTheme(4)}>
+            {theme === 4 && (
+              <div className="check">
+                <FontAwesomeIcon icon={faCheck} />
+              </div>
+            )}
+          </div>
+          <div className="options beach" onClick={() => changeTheme(4)}>
             {theme === 4 && (
               <div className="check">
                 <FontAwesomeIcon icon={faCheck} />
