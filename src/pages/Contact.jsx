@@ -107,6 +107,11 @@ export default function Contact() {
        
     </form>
 
+    <div>
+
+      <p className='bottom-signup'>At UseRecipes we value all of our customers and understand that you care about the privacy and security of your personal information. Our Privacy Policy applies to UseRecipes's collection, storage, use and disclosure of personal information that may be collected by us when you interact with Barnes & Noble, such as when you visit our stores or websites, or use our devices or applications, participate in our Member Program, or deal with customer service.</p>
+    </div>
+
    
 
     </div>
