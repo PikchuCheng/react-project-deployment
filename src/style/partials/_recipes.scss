@@ -32,6 +32,7 @@
     border-radius: 25px;
     box-shadow:var(--box-shadow);
     animation: slideRight .5s forwards;
+    cursor: pointer;
   }
  }
 
@@ -59,6 +60,7 @@
     padding-inline: 1em;
     border-radius: 3px;
     background: var(--primary-color);
+    
     
   }
  }
@@ -88,7 +90,7 @@
     box-shadow: var(--box-shadow);
     width: 300px;
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     transition: transform 0.2s;
 
@@ -130,8 +132,9 @@
       border-top:2px double grey;
       font-size: small;
       text-align: justify;
-      margin-top: 2px;
-      margin-bottom: 40px;
+      margin-top: 4px;
+      margin-bottom: 30px;
+      padding: 5px;
       line-height: normal;
       a{
         text-decoration: none;
@@ -147,11 +150,11 @@
       color: var(--text-color);
       border: none;
       border-radius: 25px;
-      padding: 5px;
+      padding: 10px;
       cursor: pointer;
       transition: background-color 0.2s;
-      right: 2px;
-      bottom: 2px;
+      right: 25px;
+      bottom: 20px;
       background: var(--primary-color);
 
       &:hover {

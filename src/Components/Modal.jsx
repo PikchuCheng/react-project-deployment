@@ -19,10 +19,10 @@ function Modal() {
           <MdCancel className='btn-cancel' onClick={handleCancelModal} />
           <h2 className='titlecard'>{selectedItem.title}</h2>
           <img src={selectedItem?.image} alt="" />
-          
-          <h3>Preparation Time: {selectedItem.readyInMinutes}min</h3>
-          <h3>Potions: {selectedItem.servings}</h3>
-          
+          <div className='div-modal'>
+          <div >Preparation Time: {selectedItem.readyInMinutes}min</div>
+          <div>Potions: {selectedItem.servings}</div>
+          </div>
         </div>
       ) : null}
     </>

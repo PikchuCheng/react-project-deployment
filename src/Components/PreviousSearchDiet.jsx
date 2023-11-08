@@ -20,6 +20,11 @@ export default function PreviousSearchDiet({ onSearch }) {
     const handleSearch = () => {
         onSearch(searchText);
     };
+
+    const handleSearchItemClick = (item) => {
+        setSearchText(item);
+    };
+
     return (
         <div>
             <div className="previous-search">
@@ -30,6 +35,7 @@ export default function PreviousSearchDiet({ onSearch }) {
                             className="search-item"
                             key={index}
                             style={{ animationDelay: index * 0.2 + "s" }}
+                            onClick={() => handleSearchItemClick(search)}
                         >
                             {search}
                         </div>
@@ -50,6 +56,3 @@ export default function PreviousSearchDiet({ onSearch }) {
         </div>
     );
 }
-
-
-

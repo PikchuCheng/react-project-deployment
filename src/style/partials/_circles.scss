@@ -1,44 +1,55 @@
 /* Desert-Circles */
-.circle{
-background: var(--background-color);
+.circles {
+   background: var(--background-color);
+ }
+
+.h-desserts {
+   padding: 120px;
+   font-size: 2em;
 }
-.h-desserts{
-  padding: 120px;
-}
+
 .desserts-container {
-  width: 100%;
-  height: 100%;
-  margin: 6em auto;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  padding: 20px;
-  // background-color: royalblue;
+  overflow-x: auto; /* Add horizontal scroll if the content overflows */
+  height: 280px;
+ 
+}
 
-  .dessert-circle {
-    width: 150px;
-    height: 150px;
-    position: relative;
+.dessert-circle {
+  flex: 0 0 auto; /* Prevent items from stretching */
+  margin-right: 10px; 
+  border-radius: 50%;
+  position: relative;
+   
+}
 
-    .img {
-        width: 100%;
-        height: 100%;
-        border: 1px solid;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-  }
+.img {
+  height: 200px; 
+  width: 200px; 
+  border-radius: 50%;
+}
 
-  .btn-viewmore {
-    position: absolute;
-    padding: 4px;
-    background-color: rgb(129, 194, 190);
-    font-size: larger;
-    width: 80px;
-    border-radius: 8px;
-    transform: translateX(-50%);
-    bottom: -50px;
-    left: 3.6em;
+.btn-viewmore {
+  position: absolute;
+  padding: 4px;
+  background-color: var(--primary-color);
+  font-size: larger;
+  width: 80px;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  margin-bottom: 2px;
+  bottom: 0;
+  left: 5em;
+
+  &:hover{
+    background: var(--text-color);
+    color: var(--primary-color);
   }
 }
+
+@media screen and (max-width: 768px) {
+    .desserts-container {
+      flex-wrap: wrap;
+    }
+}
+  
