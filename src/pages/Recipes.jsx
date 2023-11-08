@@ -55,8 +55,6 @@ function Recipes() {
           ))
         )}
       </div>
-
-      <h1>From Recipes</h1>
     </div>
     
   );
