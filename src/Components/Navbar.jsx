@@ -32,7 +32,7 @@ function closeSidebar(){
     <div className= "navbar container-navbar">
 
    
-        <a href="#!" className='logo'>Use<span>Recipes</span></a>
+        <Link to="/" className='logo'>Use<span>Recipes</span></Link>
       
         <div className='nav-links'>
 
