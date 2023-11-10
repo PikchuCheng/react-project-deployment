@@ -21,7 +21,7 @@ export default function Footer() {
 
         <p>
           UseRecipes is a place where you can get delicious recipes all over the
-          world! With UseRecipes, you'll have the world's most delectable dishes
+          world! With UseRecipes, you&apos;ll have the world&apos;s most delectable dishes
           at your fingertips, ready to be prepared and savored. Join us on this
           gastronomic adventure, and let your taste buds travel the world, one
           delightful recipe at a time.
@@ -77,18 +77,18 @@ export default function Footer() {
 
             <div className="profile-box">
               <div className="profile-container">
-                <img className="img-footer" src="../images/profile.png" />
+                <img className="img-footer" src="../images/gabriella.png" />
                 <p>Gabriella</p>
                 <p>Developer</p>
               </div>
               <div className="profile-container">
-                <img className="img-footer" src="../images/profile.png" />
+                <img className="img-footer" src="../images/rachel.png" />
                 <p>Pikchu</p>
                 <p>Developer</p>
               </div>
 
               <div className="profile-container">
-                <img className="img-footer" src="../images/profile.png" />
+                <img className="img-footer" src="../images/esther.png" />
                 <p>Esther</p>
                 <p>Developer</p>
               </div>

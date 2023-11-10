@@ -74,8 +74,7 @@
   to{
     transform: translateX(0);
     opacity: 1;
-  }
-  
+  }  
 }
 
 .cards-container {
@@ -163,6 +162,18 @@
       }
     }
   }
-
+ }
 }
+
+@media screen and (max-width: 768px) {
+
+  .recipes{
+    margin:0;
+    padding: 0;
+    width: 90vw;
+    .cards-container{
+      width: 400px;
+      margin: 0;
+    }
+  }
 }

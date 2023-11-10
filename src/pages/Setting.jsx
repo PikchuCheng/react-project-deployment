@@ -2,11 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 
-
 export default function Setting() {
-
   const [settings, setSettings] = useState({
-    "--background-color": "linear-gradient(to top #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
+    "--background-color":
+      "linear-gradient(to top #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
     "--background-light": "rgb(223, 216, 216)",
     "--primary-color": "rgb(255, 99, 71)",
     "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
@@ -17,57 +16,57 @@ export default function Setting() {
     "--animation-speed": 1,
   });
 
- 
-
   const [theme, setTheme] = useState(0);
   const themes = [
     {
-      "--background": "linear-gradient(to top, #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
+      "--background":
+        "linear-gradient(to top, #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
       "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
       "--text-color": "#0A0A0A",
-    
     },
     {
       "--background": "linear-gradient(to top right, #13547a, #80d0c7)",
       "--box-shadow": " 4px 4px 4px rgba(74, 69, 69, 0.736)",
       "--text-color": "#fff",
-   
-    },
-   {
-      "--background": "linear-gradient(to top, #09203f, #537895)",
-      "--box-shadow":  " 0 6px 6px -4px rgb(173, 216, 230)",
-      "--text-color": "#fff",
-      
     },
     {
-      "--background": "linear-gradient(to bottom right, #85CBCC, #F9E2AE, #fbc78f)",
-      "--box-shadow": " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      "--background": "linear-gradient(to top, #09203f, #537895)",
+      "--box-shadow": " 0 6px 6px -4px rgb(173, 216, 230)",
+      "--text-color": "#fff",
+    },
+    {
+      "--background":
+        "linear-gradient(to bottom right, #85CBCC, #F9E2AE, #fbc78f)",
+      "--box-shadow":
+        " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
       "--text-color": "#0A0A0A",
-      
     },
     {
       "--background": "linear-gradient(to bottom, #a28089, #f3e7d1, #ffcb74)",
-      "--box-shadow": " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      "--box-shadow":
+        " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
       "--text-color": "#fff",
     },
     {
-      "--background": "linear-gradient(to top, #51e2f5, #9df9ef, #edf756, #ffa8b6, #a28089)",
-      "--box-shadow": " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
+      "--background":
+        "linear-gradient(to top, #51e2f5, #9df9ef, #edf756, #ffa8b6, #a28089)",
+      "--box-shadow":
+        " rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px",
       "--text-color": "#003366",
-    }
+    },
   ];
 
-function changeTheme(index) {
-  const selectedTheme = themes[index];
-  setTheme(index)
-  let updatedSettings = { ...settings }
-  for (let key in selectedTheme) {
-    updatedSettings[key] = selectedTheme[key];
+  function changeTheme(index) {
+    const selectedTheme = themes[index];
+    setTheme(index);
+    let updatedSettings = { ...settings };
+    for (let key in selectedTheme) {
+      updatedSettings[key] = selectedTheme[key];
+    }
+    console.log(selectedTheme);
+    setSettings(updatedSettings);
   }
-  console.log(selectedTheme);
-  setSettings(updatedSettings);
-  }
-   
+
   const [niceColor, setNiceColor] = useState(0);
   const niceColors = [
     "rgb(255, 99, 71)", // Tomato
@@ -85,33 +84,29 @@ function changeTheme(index) {
   function changeColor(index) {
     const _color = niceColors[index];
     let _settings = { ...settings };
-    _settings['--primary-color'] = _color;
-    setSettings(_settings);
+    _settings["--primary-color"] = _color;
     setNiceColor(index);
+    setSettings(_settings);
   }
 
   const [fontFamily, setFontFamily] = useState(0);
   const fontFamilies = [
-    "DM Serif Display, serif",
-    "playball",
-    "Nunito Sans",
-    "Helvetica, sans-serif",
-    "Georgia, serif",
-    "Courier New, monospace",
+    "Poppins",
+    "Playball",
+    "Nunito",
+    "Helvetica",
+    "Georgia",
+    "monospace",
   ];
-
-  
 
   function changeFontFamily(index) {
     const _family = fontFamilies[index];
     setFontFamily(_family);
     let _settings = { ...settings };
-    _settings['--font-family'] = _family;
+    _settings["--font-family"] = _family;
     setSettings(_settings);
     console.log(_family);
   }
-
-
 
   const [fontSize, setFontSize] = useState(0);
   const fontSizes = [
@@ -129,10 +124,10 @@ function changeTheme(index) {
     },
   ];
 
-  function changeFontSize(index){
+  function changeFontSize(index) {
     const _size = fontSizes[index];
     let _settings = { ...settings };
-    _settings['--font-size'] = _size.value;
+    _settings["--font-size"] = _size.value;
     setSettings(_settings);
     setFontSize(index);
   }
@@ -162,12 +157,11 @@ function changeTheme(index) {
   // }
 
   useEffect(() => {
-    console.log('settings update', settings);
+    console.log("settings update", settings);
     const root = document.documentElement;
-    for(let key in settings) {
-      root.style.setProperty(key, settings[key])
+    for (let key in settings) {
+      root.style.setProperty(key, settings[key]);
     }
-  
   }, [settings]);
 
   return (
@@ -246,10 +240,7 @@ function changeTheme(index) {
         <h2 className="h2-settings">Font Family</h2>
         <div className="options-container color">
           {fontFamilies.map((font, index) => (
-            <button
-              key={index}
-              onClick={() => changeFontFamily(index)}
-            >
+            <button key={index} onClick={() => changeFontFamily(index)}>
               <span>{font}</span>
               {font === fontFamily && (
                 <div className="check">
@@ -260,7 +251,6 @@ function changeTheme(index) {
           ))}
         </div>
       </div>
-     
 
       <div className="settings-section">
         <h2 className="h2-settings">Font Size</h2>
