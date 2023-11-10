@@ -1,5 +1,3 @@
-
-
 const RecipeCard = ({ recipe }) => {
   return (
     <div key={recipe.id} className="recipes-card">

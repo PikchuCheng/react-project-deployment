@@ -11,7 +11,6 @@ function Modal() {
     setIsModalOpen(!isModalOpen);
   };
 
-
   return (
 <> 
 {selectedItem && isModalOpen ? (

@@ -1,7 +1,6 @@
 import { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
-
 const Hero = () => {
      const [recipes, setRecipes]= useState([])
     
@@ -14,9 +13,6 @@ const Hero = () => {
     setRecipes(data.results.sort(()=>Math.random()-.5));
   });
 },[])
-
-
-
 
 return (
 <div className='container-hero'>
