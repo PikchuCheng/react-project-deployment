@@ -4,6 +4,8 @@
   justify-content: space-around;
   padding: 5em;
   flex-wrap: wrap;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
 
   .column-left {
     width: 60%;
@@ -11,21 +13,21 @@
 
     .title-hero{
       margin-top: -1em;
-      color:var(--background-color);
+      color:var(--text-color);
     }
 
     .info {
       line-height: 1.8;
       margin-top: 1.75em;
       font-size: 1.5em;
-      font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+      font-family: var(--font-family);
     }
 
 
     .button-recipe {
       border: none;
       outline: none;
-      background-color: var(--background-color);
+      background: var(--background-color);
       padding: 0.8em 1em;
       font-size: 1.2em;
       font-weight: 600;
@@ -35,8 +37,8 @@
 
       &:hover{
         cursor: pointer;
-        background-color: var(--primary-color);
-        color: var(--background-color);
+        background: var(--primary-color);
+        color: var(--text-color);
       }
 
     }

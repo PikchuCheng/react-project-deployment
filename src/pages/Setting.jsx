@@ -7,7 +7,7 @@ export default function Setting() {
     "--background-color":
       "linear-gradient(to top #a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 )",
     "--background-light": "rgb(223, 216, 216)",
-    "--primary-color": "rgb(255, 99, 71)",
+    "--primary-color": "rgb(130, 226, 218)",
     "--box-shadow": "4px 4px 4px rgba(74, 69, 69, 0.736)",
     "--text-color": "#0A0A0A",
     "--text-light": "rgb(255, 105, 180)",
